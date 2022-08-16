@@ -2,9 +2,6 @@ package EX7;
 
 public class Supervisor extends Funcionario{
 
-    public Supervisor() {
-        super();
-    }
 
     public Supervisor(String nome, int idade, Double salario) {
         super(nome, idade, salario);

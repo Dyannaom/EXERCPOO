@@ -14,6 +14,9 @@ public abstract class Personagem {
     protected int forca;
     protected int level;
     protected static int personagensCriados = 0;
+    
+   
+    
 
     public static int getPersonagensCriados() {
         return personagensCriados;

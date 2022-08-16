@@ -7,7 +7,9 @@ public class Main3 {
 
         System.out.println();
 
-        Mago mage1 = new Mago("Sonic", 5, 20, 0, 5, 5 ,3);
+        
+        Mago mage1 = new Mago("Sonic", 5, 20, 0, 5, 5 ,3);          
+        
         Guerreiro warrior1 = new Guerreiro("Tails", 3, 15, 0, 4, 3, 1);
 
         System.out.println("Teste 1: Mago");
@@ -53,5 +55,8 @@ public class Main3 {
         System.out.println("Forca: " + personagem.getForca());
         System.out.println("Xp: " + personagem.getXp());
         System.out.println("Level: " + personagem.getLevel());
+       
     }
+    
+   
 }

@@ -5,13 +5,14 @@ public abstract class Produto {
     private double preco;
     private int qtd;
 
-    public Produto(String nome, double preco, int qtd){
-        setNome(nome);
-        setPreco(preco);
-        setQtd(qtd);
-    }
 
-    public String getNome() {
+    public Produto(String nome, double preco, int qtd) {
+		this.nome = nome;
+		this.preco = preco;
+		this.qtd = qtd;
+	}
+
+	public String getNome() {
         return nome;
     }
 

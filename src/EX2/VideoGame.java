@@ -6,14 +6,15 @@ public class VideoGame extends Produto implements Imposto{
     private boolean isUsado;
 
 
-    public VideoGame(String nome, double preco, int qtd, String marca, String modelo, boolean isUsado){
-        super(nome, preco, qtd);
-        setMarca(marca);
-        setModelo(modelo);
-        setUsado(isUsado);
-    }
+   
+	public VideoGame(String nome, double preco, int qtd, String marca, String modelo, boolean isUsado) {
+		super(nome, preco, qtd);
+		this.marca = marca;
+		this.modelo = modelo;
+		this.isUsado = isUsado;
+	}
 
-    public String getMarca() {
+	public String getMarca() {
         return marca;
     }
 
@@ -37,15 +38,20 @@ public class VideoGame extends Produto implements Imposto{
         isUsado = usado;
     }
 
-    @Override
-    public void calculaImposto() {
-        if (isUsado){
-            double imposto = getPreco() * 25/100;
-            System.out.println("Imposto" + getNome() +" "+ getModelo() + " usado, R$ " + imposto ) ;
-        } else {
-         
-            double imposto = getPreco() * 45/100 ;
-            System.out.println("Imposto" + getNome() +" "+ getModelo() + " R$ " + imposto ) ;
-        }
-    }
+	public void calculaImposto() {
+		if (isUsado == true) {
+			double impostoUsado = getPreco() * 25 / 100;				
+			System.out.println("Imposto PS4 Slim usado: " + "R$ " + impostoUsado);
+			
+		} else {
+			double impostoNovo = getPreco() * 25 / 100;			
+			System.out.println("Imposto PS4 Slim: " + "R$ " + impostoNovo);
+			
+			}
+		
+		
+		
+	}
+
+   
 }

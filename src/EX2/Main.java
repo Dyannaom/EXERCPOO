@@ -9,8 +9,8 @@ public class Main {
         Livro l2 = new Livro("Senhor dos Anéis", 60, 30, "R.R. Tolkien", "fantasia", 500);
         Livro l3 = new Livro("Java POO", 20, 50, "GFT", "educativo", 500);
 
-        VideoGame PS4= new VideoGame("PS4", 1800, 100, "Sony", "Slim", false);
-        VideoGame PS4Usadoo = new VideoGame("PS4", 1000, 7, "Sony", "Slim", true);
+        VideoGame ps4= new VideoGame("PS4", 1800, 100, "Sony", "Slim", false);
+        VideoGame ps4Usado = new VideoGame("PS4", 1000, 7, "Sony", "Slim", true);
         VideoGame xbox = new VideoGame("XBOX", 1500, 500, "Microsoft", "one", false);
 
         List<Livro>livros = new ArrayList<>();
@@ -19,8 +19,8 @@ public class Main {
         livros.add(l3);
 
         List<VideoGame>games = new ArrayList<>();
-        games.add(PS4);
-        games.add(PS4mUsado);
+        games.add(ps4);
+        games.add(ps4Usado);
         games.add(xbox);
 
         Loja americanas = new Loja("Americanas", "12345678", livros, games);
@@ -28,8 +28,8 @@ public class Main {
         l2.calculaImposto();
         l3.calculaImposto();
 
-        slimUsado.calculaImposto();
-        PS4.calculaImposto();
+        ps4Usado.calculaImposto();
+        ps4.calculaImposto();
 
         americanas.listaLivros();
         americanas.listaVideoGames();

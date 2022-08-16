@@ -19,8 +19,8 @@ public class Main456 {
 
         String nomeMaisVelho = "";
         int idadeMaisVelho = 0;
-        for(Pessoa pessoa : pessoas){
-            if(pessoa.getIdade() > idadeMaisVelho){
+        for (Pessoa pessoa : pessoas) {
+            if (pessoa.getIdade() > idadeMaisVelho) {
                 nomeMaisVelho = pessoa.getNome();
                 idadeMaisVelho = pessoa.getIdade();
             }
@@ -28,35 +28,32 @@ public class Main456 {
 
         System.out.println("A pessoa mais velha da lista é : " + nomeMaisVelho);
 
-        //EXERCICIO 5
-        //printa as pessoas da lista antes da remover
-        for(Pessoa pessoa : pessoas){
+        // EXERCICIO 5
+        // printa as pessoas da lista antes da remover
+        for (Pessoa pessoa : pessoas) {
 
             System.out.println("nome: " + pessoa.getNome() + " idade: " + pessoa.getIdade());
-                   }
+        }
 
-
-
-        for(int i = 0; i < pessoas.size(); i++){
-            if(pessoas.get(i).getIdade() < 18){
+        for (int i = 0; i < pessoas.size(); i++) {
+            if (pessoas.get(i).getIdade() < 18) {
                 pessoas.remove(i);
             }
         }
 
-        //printa as pessoas da lista depois da remoo
+        // printa as pessoas da lista depois da remoo
         System.out.println();
-        for(Pessoa pessoa : pessoas){
+        for (Pessoa pessoa : pessoas) {
             System.out.println("nome: " + pessoa.getNome() + " idade: " + pessoa.getIdade());
         }
 
-        //EXERCICIO 6
+        // EXERCICIO 6
         System.out.println();
-        for(Pessoa pessoa : pessoas){
-            if(pessoa.getNome().equals("Jessica")){
+        for (Pessoa pessoa : pessoas) {
+            if (pessoa.getNome().equals("Jessica")) {
                 System.out.println("A idade da Jessica  " + pessoa.getIdade());
             }
         }
-
 
     }
 

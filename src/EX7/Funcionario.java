@@ -6,11 +6,12 @@ package EX7;
  */
 
 public abstract class Funcionario {
+	
+	public static Funcionario funcionario;
     private String nome;
     private int idade;
     private Double salario;
-    private Funcionario() {
-    }
+    
     public Funcionario(String nome, int idade, Double salario) {
         this.nome = nome;
         this.idade = idade;
